@@ -66,5 +66,7 @@ class FileStorage:
             del FileStorage.__objects[dict_obj]
 
     def close(self):
-        """this deserializes json file to objects"""
+        """
+        Calls reload() method for deserializing the JSON file to objects
+        """
         self.reload()
